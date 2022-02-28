@@ -1,0 +1,40 @@
+
+/*O asterisco é um seletor que pega todos os elementos e se neste caso j´deixarmos o box-sizing: border-box ele já vai deixar o ajuste automático para as caixas.*/
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 32px;
+    margin: 0;
+
+}
+
+.frase1, .frase2, .referencia{
+    width: 500px;
+    text-align: justify;
+    background-color: yellow;
+}
+
+p{
+    margin:10px;
+}
+
+.referencia{
+    background-color: blue;
+    height: 20px;
+}
+
+.frase1{
+    /*Quando utilizamos o content-box ele vai acrescentar valores nas caixas ao inserir bordas e com isso devemos calcular os tamanhos. Melhor opção é utilizar o border-box(automático)*/
+    /*box-sizing: content-box;*/
+    padding: 20px;
+    border: 3px solid red;
+}
+
+.frase2{
+    /*Quando utilizamos o border-box ele vai ajustar sem acrescentar valores nas caixas ao inserir bordas. Melhor opção é utilizar o border-box(automático)*/
+    padding:20px;
+    border: 20px solid red;
+    /*box-sizing: border-box;*/
+}
